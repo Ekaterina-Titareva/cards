@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <header className='container mx-auto p-4 text-center font-mono'>
+        <header className='p-4 text-center font-mono'>
             <h2 
                 className='text-xs text-black'>
                     Разработчик данного сайта: Титарева Екатерина
