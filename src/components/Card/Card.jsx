@@ -31,17 +31,18 @@ const Card = ({ card }) => {
                         {`https://random.dog/${card}`}
                     </a>
                 </p>
-                </div>
                 <div className={styles.buttonsWrapper}>
-                <Button 
-                    onClick={handleToggleFavorite}
-                    className={`${styles.button} ${favorites.includes(card) ? styles.like : styles.dislike}`}
-                />
-                <Button 
-                    onClick={handleDelete}
-                    className={`${styles.button} ${styles.delete}`}
-                />
+                    <Button 
+                        onClick={handleToggleFavorite}
+                        className={`${styles.button} ${favorites.includes(card) ? styles.like : styles.dislike}`}
+                    />
+                    <Button 
+                        onClick={handleDelete}
+                        className={`${styles.button} ${styles.delete}`}
+                    />
                 </div>
+                </div>
+
             <img 
                 src={`https://random.dog/${card}`}
                 alt="картинка собачки"

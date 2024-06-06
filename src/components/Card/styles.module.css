@@ -1,5 +1,5 @@
 .container {
-    @apply flex flex-col overflow-hidden rounded-lg border-4 border-white/50 bg-white/50 sm:h-60 lg:h-80 hover:border-green-500/30 hover:transition-colors hover:duration-300;
+    @apply overflow-hidden rounded-lg border-4 border-white/50 bg-white/50 hover:border-green-500/30 hover:transition-colors hover:duration-300;
 }
 
 .text {
@@ -31,5 +31,5 @@
 }
 
 .image {
-    @apply w-full h-full object-cover rounded-lg;
+    @apply w-full h-[300px] object-cover rounded-lg;
 }
