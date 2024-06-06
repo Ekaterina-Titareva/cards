@@ -19,15 +19,15 @@
 }
 
 .like {
-    @apply bg-[url('/cards/like.svg')] bg-no-repeat;
+    @apply bg-[url('../like.svg')] bg-no-repeat;
 }
 
 .dislike {
-    @apply bg-[url('/cards/dislike.svg')] bg-no-repeat;
+    @apply bg-[url('../dislike.svg')] bg-no-repeat;
 }
 
 .delete {
-    @apply bg-[url("/cards/trash.svg")] bg-no-repeat;
+    @apply bg-[url("../trash.svg")] bg-no-repeat;
 }
 
 .image {

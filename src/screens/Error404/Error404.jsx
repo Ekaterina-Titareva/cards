@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import styles from './styles.module.css'
 
 const Error404 = () => {
     return (
-        <main className='container mx-auto p-4'>
-            <h1 className='text-green-600 text-3xl mb-6 font-extrabold'>Данная страница не найдена.</h1>
-            <h3> Вернуться на <Link className='block text-xs text-blue-500 hover:text-blue-800 transition duration-300' to="/">главную страницу</Link></h3>
+        <main className={styles.container}>
+            <h1 className={styles.title}>Данная страница не найдена.</h1>
+            <h3> Вернуться на <Link className={styles.link} to="/cards">главную страницу</Link></h3>
         </main>
 )
 }
