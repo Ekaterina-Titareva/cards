@@ -10,7 +10,7 @@ function App() {
     <Router>
       < Header />
       <Routes>
-          <Route path='/' element={ 
+          <Route path='/cards' element={ 
             <Home />} />
           <Route path='/*' element={
             < Error404 />} 
