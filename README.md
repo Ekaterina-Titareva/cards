@@ -1,4 +1,4 @@
-# Open [link to the site](https://ekaterina-titareva.github.io/cards/)/) 
+# Open [link to the site](https://ekaterina-titareva.github.io/cards/) 
 
 # React + Vite
 
