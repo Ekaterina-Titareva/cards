@@ -1,7 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-#root {
-    @apply min-h-screen min-w-80 flex flex-col justify-between text-center gap-8 font-mono bg-gradient-to-r from-green-500/30 to-amber-400/30;
-}
