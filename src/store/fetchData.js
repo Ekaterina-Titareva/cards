@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const fetchData = createAsyncThunk(
-    'doggos',
+    'fetchData',
     async (url, { rejectWithValue }) => {
     try {
         const response = await fetch(url);

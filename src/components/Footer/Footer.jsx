@@ -1,17 +1,19 @@
+import styles from './styles.module.css'
+
 const Footer = () => {
     return (
-        <header className='p-4 text-center font-mono'>
+        <footer className={styles.container}>
             <h2 
-                className='text-xs text-black'>
+                className={styles.text}>
                     Разработчик данного сайта: Титарева Екатерина
             </h2>
             <a 
-                className='text-xs text-blue-500 hover:text-blue-800 transition duration-300'
+                className={styles.link}
                 href="https://github.com/Ekaterina-Titareva"
                 target="_blank">
                     https://github.com/Ekaterina-Titareva
             </a>
-        </header>
+        </footer>
 )
 }
 

@@ -14,8 +14,12 @@ reducers: {
     cardAdded(state, action) {
     state.cards.push(action.payload);
     },
-    cardDeleted(state, action) {
-    state.cards = state.cards.filter(card => card.id !== action.payload);
+    cardDeleted: (state, action) => {
+        const index = state.data.findIndex(card => card === action.payload);
+        if (index !== -1) {
+            // Удаляем карточку из массива
+            state.data.splice(index, 1);
+        }
     },
     toggleFavorites: (state, action) => {
         const isExist = state.favorites.some(card => card === action.payload);
@@ -33,7 +37,7 @@ reducers: {
             state.error = null;
         })
         .addCase(fetchData.fulfilled, (state, action) => {
-            state.data = action.payload;
+            state.data = action.payload.filter(item => item.includes('.jpg')).slice(0, 16);
             state.loading = false;
         })
         .addCase(fetchData.rejected, (state, action) => {

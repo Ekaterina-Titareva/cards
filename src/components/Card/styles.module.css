@@ -1,0 +1,35 @@
+.container {
+    @apply flex flex-col overflow-hidden rounded-lg border-4 border-white/50 bg-white/50 sm:h-60 lg:h-80 hover:border-green-500/30 hover:transition-colors hover:duration-300;
+}
+
+.text {
+    @apply text-sm text-gray-700 p-2;
+}
+
+.link {
+    @apply block text-xs text-blue-500 hover:text-blue-800 transition duration-300;
+}
+
+.buttonsWrapper {
+    @apply flex flex-row justify-evenly
+}
+
+.button {
+    @apply m-3 w-6 h-6 hover:border-2 hover:border-green-500/30;
+}
+
+.like {
+    @apply bg-[url('./like.svg')] bg-no-repeat;
+}
+
+.dislike {
+    @apply bg-[url('./dislike.svg')] bg-no-repeat;
+}
+
+.delete {
+    @apply bg-[url("./trash.svg")] bg-no-repeat;
+}
+
+.image {
+    @apply w-full h-full object-cover rounded-lg;
+}
